@@ -1,0 +1,40 @@
+table {
+  margin: 10px 0;
+  border-collapse: collapse;
+  width: 100%;
+  th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #24A0Ed;
+    color: white;
+  }
+   td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  .edit-button::after {
+    content: '';
+  }
+  tr:hover {background-color: #ddd;
+    .edit-button::after {
+      content: 'Edit';
+      color: white;
+      padding: 5px 10px;
+      background: #24A0Ed;
+      cursor: pointer;
+    }
+  }
+}
+.buttons {
+  margin: 10px 0;
+  background: #24A0Ed;
+  color: white;
+  height: 30px;
+  border: 0;
+  border-radius: 4px;
+  max-width: 200px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}

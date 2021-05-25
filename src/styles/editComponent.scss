@@ -1,0 +1,50 @@
+.container-edit {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.5);
+  .form-container {
+    display: flex;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    height: 500px;
+    width: 500px;
+    flex-direction: column;
+    overflow-y: auto;
+    input {
+      margin-top: 5px;
+      line-height: 20px;
+    }
+    label {
+      margin: 5px 0;
+      font-size: 14px;
+      display: flex;
+      flex-direction: column;
+    }
+    .button-container {
+      display: flex;
+
+      .buttons {
+        background: #24A0Ed;
+        color: white;
+        height: 30px;
+        border: 0;
+        border-radius: 4px;
+        max-width: 200px;
+        font-size: 15px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      .ml-auto {
+        margin-left: auto;
+      }
+    }
+
+  }
+}
