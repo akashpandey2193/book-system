@@ -27,7 +27,7 @@ export default class ListView extends React.Component {
 
       if(selectedBookIndex !== '_null' && this.state.filterList.length > 0) {
         let correctIndex = null
-        this.props.books.map((item, index) => {
+        this.props.books.forEach((item, index) => {
           if (item.author === this.state.filterList[selectedBookIndex].author) {
             correctIndex = index
           }
